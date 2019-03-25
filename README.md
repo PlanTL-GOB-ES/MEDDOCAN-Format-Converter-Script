@@ -13,8 +13,8 @@ task. It is intended to be used via command line:
 $> python converter.py -i input_folder/ -o output_folder/
 </pre>
 
-It converts files between MEDDOCAN-Brat, MEDDOCAN-XML, and i2b2 formats. The mapping 
-between the different formats is defined in the files in the mappings/ folders. See 
+It converts files between `MEDDOCAN-Brat`, `MEDDOCAN-XML`, and `i2b2` formats. The mapping 
+between the different formats is defined in the files in the `mappings/` folders. See 
 below for further information.
 
 Input and target directories, as well as source and target formats can be chosen 
@@ -32,8 +32,8 @@ This software requires to have Python 3 installed on your system.
 
 <pre>
 input/
-This directory contains sample input  files with annotations in MEDDOCAN-Brat, 
-MEDDOCAN-XML, and i2b2 annotation formats.
+This directory contains sample input  files with annotations in `MEDDOCAN-Brat`, 
+`MEDDOCAN-XML`, and `i2b2` annotation formats.
 
 mapping/
 This folder contains the files defining the mapping between the different formats.
@@ -45,8 +45,8 @@ wish to change the mapping, do not change the script, just change the mapping in
 files.
 
 output/
-This directory contains sample output files with annotations in MEDDOCAN-Brat, 
-MEDDOCAN-XML, and i2b2 annotation formats.
+This directory contains sample output files with annotations in `MEDDOCAN-Brat`, 
+`MEDDOCAN-XML`, and `i2b2` annotation formats.
 </pre> 
 
 
@@ -94,20 +94,20 @@ optional arguments:
 
 Basic Examples:
 
-Convert all files in `input/brat/sample` from `MEDDOCAN-Brat` format (default source 
+Convert all files in `input/brat/sample/` from `MEDDOCAN-Brat` format (default source 
 format) into `MEDDOCAN-XML` (default target format) and store output files in 
-`output/xml/sample`:
+`output/xml/sample/`:
 
 <pre>
-$> python converter.py -i input/brat/sample -o output/xml/sample
+$> python converter.py -i input/brat/sample/ -o output/xml/sample/
 </pre>
 
 
-Convert all files in `input/xml/sample` from `MEDDOCAN-XML` format into `i2b2`
-formatand store output files in `output/i2b2/sample`:
+Convert all files in `input/xml/sample/` from `MEDDOCAN-XML` format into `i2b2`
+formatand store output files in `output/i2b2/sample/`:
 
 <pre>
-$> python converter.py -i input/xml/sample -o output/i2b2/sample -s xml -t i2b2
+$> python converter.py -i input/xml/sample/ -o output/i2b2/sample/ -s xml -t i2b2
 </pre>
 
 
